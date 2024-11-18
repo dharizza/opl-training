@@ -1,0 +1,10 @@
+services:
+  hello_world.middleware:
+    class: Drupal\hello_world\HelloWorldMiddleware
+    arguments: ['@current_user']
+    tags:
+      - { name: http_middleware, priority: 10 }
+
+  hello_world.text_transformer:
+    class: Drupal\hello_world\TextTransformations
+    arguments: ['@logger.factory']

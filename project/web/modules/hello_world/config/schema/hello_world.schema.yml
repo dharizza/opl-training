@@ -1,0 +1,7 @@
+field.formatter.settings.hello_world_test_plugin:
+  type: mapping
+  label: Test Plugin formatter settings
+  mapping:
+    foo:
+      type: string
+      label: Foo
